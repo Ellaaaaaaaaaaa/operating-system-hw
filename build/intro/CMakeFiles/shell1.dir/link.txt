@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wall -ansi -D_GNU_SOURCE -DLINUX   CMakeFiles/shell1.dir/shell1.c.o  -o shell1 ../lib/libapue.a 

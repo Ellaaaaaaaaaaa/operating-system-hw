@@ -1,0 +1,9 @@
+/root/apue.3e/build/CMakeFiles/rebuild_cache.dir
+/root/apue.3e/build/CMakeFiles/edit_cache.dir
+/root/apue.3e/build/lib/CMakeFiles/rebuild_cache.dir
+/root/apue.3e/build/lib/CMakeFiles/apue.dir
+/root/apue.3e/build/lib/CMakeFiles/edit_cache.dir
+/root/apue.3e/build/intro/CMakeFiles/rebuild_cache.dir
+/root/apue.3e/build/intro/CMakeFiles/edit_cache.dir
+/root/apue.3e/build/intro/CMakeFiles/hello.dir
+/root/apue.3e/build/intro/CMakeFiles/shell1.dir
