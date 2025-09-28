@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/apue.3e/build/CMakeFiles /root/apue.3e/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /root/apue.3e/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/apue.3e/build/CMakeFiles /root/apue.3e/build/environ/CMakeFiles/progress.marks
+	cd /root/apue.3e/build && $(MAKE) -f CMakeFiles/Makefile2 environ/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/apue.3e/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /root/apue.3e/build && $(MAKE) -f CMakeFiles/Makefile2 environ/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,83 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /root/apue.3e/build && $(MAKE) -f CMakeFiles/Makefile2 environ/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /root/apue.3e/build && $(MAKE) -f CMakeFiles/Makefile2 environ/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/apue.3e/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named apue
+# Convenience name for target.
+environ/CMakeFiles/hello1.dir/rule:
+	cd /root/apue.3e/build && $(MAKE) -f CMakeFiles/Makefile2 environ/CMakeFiles/hello1.dir/rule
+.PHONY : environ/CMakeFiles/hello1.dir/rule
 
-# Build rule for target.
-apue: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 apue
-.PHONY : apue
+# Convenience name for target.
+hello1: environ/CMakeFiles/hello1.dir/rule
 
-# fast build rule for target.
-apue/fast:
-	$(MAKE) -f lib/CMakeFiles/apue.dir/build.make lib/CMakeFiles/apue.dir/build
-.PHONY : apue/fast
-
-#=============================================================================
-# Target rules for targets named hello
-
-# Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hello
-.PHONY : hello
-
-# fast build rule for target.
-hello/fast:
-	$(MAKE) -f intro/CMakeFiles/hello.dir/build.make intro/CMakeFiles/hello.dir/build
-.PHONY : hello/fast
-
-#=============================================================================
-# Target rules for targets named shell1
-
-# Build rule for target.
-shell1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 shell1
-.PHONY : shell1
-
-# fast build rule for target.
-shell1/fast:
-	$(MAKE) -f intro/CMakeFiles/shell1.dir/build.make intro/CMakeFiles/shell1.dir/build
-.PHONY : shell1/fast
-
-#=============================================================================
-# Target rules for targets named deadlock
-
-# Build rule for target.
-deadlock: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 deadlock
-.PHONY : deadlock
-
-# fast build rule for target.
-deadlock/fast:
-	$(MAKE) -f advio/CMakeFiles/deadlock.dir/build.make advio/CMakeFiles/deadlock.dir/build
-.PHONY : deadlock/fast
-
-#=============================================================================
-# Target rules for targets named hello1
-
-# Build rule for target.
-hello1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hello1
 .PHONY : hello1
 
 # fast build rule for target.
 hello1/fast:
-	$(MAKE) -f environ/CMakeFiles/hello1.dir/build.make environ/CMakeFiles/hello1.dir/build
+	cd /root/apue.3e/build && $(MAKE) -f environ/CMakeFiles/hello1.dir/build.make environ/CMakeFiles/hello1.dir/build
 .PHONY : hello1/fast
+
+hello1.o: hello1.c.o
+
+.PHONY : hello1.o
+
+# target to build an object file
+hello1.c.o:
+	cd /root/apue.3e/build && $(MAKE) -f environ/CMakeFiles/hello1.dir/build.make environ/CMakeFiles/hello1.dir/hello1.c.o
+.PHONY : hello1.c.o
+
+hello1.i: hello1.c.i
+
+.PHONY : hello1.i
+
+# target to preprocess a source file
+hello1.c.i:
+	cd /root/apue.3e/build && $(MAKE) -f environ/CMakeFiles/hello1.dir/build.make environ/CMakeFiles/hello1.dir/hello1.c.i
+.PHONY : hello1.c.i
+
+hello1.s: hello1.c.s
+
+.PHONY : hello1.s
+
+# target to generate assembly for a file
+hello1.c.s:
+	cd /root/apue.3e/build && $(MAKE) -f environ/CMakeFiles/hello1.dir/build.make environ/CMakeFiles/hello1.dir/hello1.c.s
+.PHONY : hello1.c.s
 
 # Help Target
 help:
@@ -182,12 +159,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... apue"
-	@echo "... hello"
-	@echo "... shell1"
-	@echo "... deadlock"
 	@echo "... hello1"
+	@echo "... edit_cache"
+	@echo "... hello1.o"
+	@echo "... hello1.i"
+	@echo "... hello1.s"
 .PHONY : help
 
 
@@ -199,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/apue.3e/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

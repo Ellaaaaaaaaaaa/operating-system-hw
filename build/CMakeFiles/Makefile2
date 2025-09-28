@@ -141,7 +141,7 @@ intro/preinstall:
 intro/CMakeFiles/hello.dir/all: lib/CMakeFiles/apue.dir/all
 	$(MAKE) -f intro/CMakeFiles/hello.dir/build.make intro/CMakeFiles/hello.dir/depend
 	$(MAKE) -f intro/CMakeFiles/hello.dir/build.make intro/CMakeFiles/hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/apue.3e/build/CMakeFiles --progress-num=37,38 "Built target hello"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/apue.3e/build/CMakeFiles --progress-num=39,40 "Built target hello"
 .PHONY : intro/CMakeFiles/hello.dir/all
 
 # Include target in all.
@@ -178,7 +178,7 @@ clean: intro/CMakeFiles/hello.dir/clean
 intro/CMakeFiles/shell1.dir/all: lib/CMakeFiles/apue.dir/all
 	$(MAKE) -f intro/CMakeFiles/shell1.dir/build.make intro/CMakeFiles/shell1.dir/depend
 	$(MAKE) -f intro/CMakeFiles/shell1.dir/build.make intro/CMakeFiles/shell1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/apue.3e/build/CMakeFiles --progress-num=39,40 "Built target shell1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/apue.3e/build/CMakeFiles --progress-num=43,44 "Built target shell1"
 .PHONY : intro/CMakeFiles/shell1.dir/all
 
 # Include target in all.
@@ -205,6 +205,116 @@ intro/CMakeFiles/shell1.dir/clean:
 
 # clean rule for target.
 clean: intro/CMakeFiles/shell1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory advio
+
+# Convenience name for "all" pass in the directory.
+advio/all: advio/CMakeFiles/deadlock.dir/all
+
+.PHONY : advio/all
+
+# Convenience name for "clean" pass in the directory.
+advio/clean: advio/CMakeFiles/deadlock.dir/clean
+
+.PHONY : advio/clean
+
+# Convenience name for "preinstall" pass in the directory.
+advio/preinstall:
+
+.PHONY : advio/preinstall
+
+#=============================================================================
+# Target rules for target advio/CMakeFiles/deadlock.dir
+
+# All Build rule for target.
+advio/CMakeFiles/deadlock.dir/all: lib/CMakeFiles/apue.dir/all
+	$(MAKE) -f advio/CMakeFiles/deadlock.dir/build.make advio/CMakeFiles/deadlock.dir/depend
+	$(MAKE) -f advio/CMakeFiles/deadlock.dir/build.make advio/CMakeFiles/deadlock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/apue.3e/build/CMakeFiles --progress-num=37,38 "Built target deadlock"
+.PHONY : advio/CMakeFiles/deadlock.dir/all
+
+# Include target in all.
+all: advio/CMakeFiles/deadlock.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+advio/CMakeFiles/deadlock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/apue.3e/build/CMakeFiles 38
+	$(MAKE) -f CMakeFiles/Makefile2 advio/CMakeFiles/deadlock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/apue.3e/build/CMakeFiles 0
+.PHONY : advio/CMakeFiles/deadlock.dir/rule
+
+# Convenience name for target.
+deadlock: advio/CMakeFiles/deadlock.dir/rule
+
+.PHONY : deadlock
+
+# clean rule for target.
+advio/CMakeFiles/deadlock.dir/clean:
+	$(MAKE) -f advio/CMakeFiles/deadlock.dir/build.make advio/CMakeFiles/deadlock.dir/clean
+.PHONY : advio/CMakeFiles/deadlock.dir/clean
+
+# clean rule for target.
+clean: advio/CMakeFiles/deadlock.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory environ
+
+# Convenience name for "all" pass in the directory.
+environ/all: environ/CMakeFiles/hello1.dir/all
+
+.PHONY : environ/all
+
+# Convenience name for "clean" pass in the directory.
+environ/clean: environ/CMakeFiles/hello1.dir/clean
+
+.PHONY : environ/clean
+
+# Convenience name for "preinstall" pass in the directory.
+environ/preinstall:
+
+.PHONY : environ/preinstall
+
+#=============================================================================
+# Target rules for target environ/CMakeFiles/hello1.dir
+
+# All Build rule for target.
+environ/CMakeFiles/hello1.dir/all: lib/CMakeFiles/apue.dir/all
+	$(MAKE) -f environ/CMakeFiles/hello1.dir/build.make environ/CMakeFiles/hello1.dir/depend
+	$(MAKE) -f environ/CMakeFiles/hello1.dir/build.make environ/CMakeFiles/hello1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/apue.3e/build/CMakeFiles --progress-num=41,42 "Built target hello1"
+.PHONY : environ/CMakeFiles/hello1.dir/all
+
+# Include target in all.
+all: environ/CMakeFiles/hello1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+environ/CMakeFiles/hello1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/apue.3e/build/CMakeFiles 38
+	$(MAKE) -f CMakeFiles/Makefile2 environ/CMakeFiles/hello1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/apue.3e/build/CMakeFiles 0
+.PHONY : environ/CMakeFiles/hello1.dir/rule
+
+# Convenience name for target.
+hello1: environ/CMakeFiles/hello1.dir/rule
+
+.PHONY : hello1
+
+# clean rule for target.
+environ/CMakeFiles/hello1.dir/clean:
+	$(MAKE) -f environ/CMakeFiles/hello1.dir/build.make environ/CMakeFiles/hello1.dir/clean
+.PHONY : environ/CMakeFiles/hello1.dir/clean
+
+# clean rule for target.
+clean: environ/CMakeFiles/hello1.dir/clean
 
 .PHONY : clean
 

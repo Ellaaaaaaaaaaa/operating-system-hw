@@ -8,11 +8,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "../advio/CMakeLists.txt"
   "CMakeFiles/3.10.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeSystem.cmake"
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
+  "../environ/CMakeLists.txt"
   "../intro/CMakeLists.txt"
   "../lib/CMakeLists.txt"
   "/usr/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in"
@@ -114,6 +116,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "intro/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "advio/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "environ/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -121,4 +125,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "lib/CMakeFiles/apue.dir/DependInfo.cmake"
   "intro/CMakeFiles/hello.dir/DependInfo.cmake"
   "intro/CMakeFiles/shell1.dir/DependInfo.cmake"
+  "advio/CMakeFiles/deadlock.dir/DependInfo.cmake"
+  "environ/CMakeFiles/hello1.dir/DependInfo.cmake"
   )

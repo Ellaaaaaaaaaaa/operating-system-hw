@@ -7,3 +7,9 @@
 /root/apue.3e/build/intro/CMakeFiles/edit_cache.dir
 /root/apue.3e/build/intro/CMakeFiles/hello.dir
 /root/apue.3e/build/intro/CMakeFiles/shell1.dir
+/root/apue.3e/build/advio/CMakeFiles/rebuild_cache.dir
+/root/apue.3e/build/advio/CMakeFiles/deadlock.dir
+/root/apue.3e/build/advio/CMakeFiles/edit_cache.dir
+/root/apue.3e/build/environ/CMakeFiles/rebuild_cache.dir
+/root/apue.3e/build/environ/CMakeFiles/hello1.dir
+/root/apue.3e/build/environ/CMakeFiles/edit_cache.dir
