@@ -1,0 +1,20 @@
+Server listening on port 8080
+New connection from 127.0.0.1:42878
+Received command: CREATE_DIR test_source
+Received command: CREATE_DIR test_source/dir1
+Received command: CREATE_DIR test_source/dir1/subdir
+Received command: FILE_METADATA test_source/dir1/subdir/file3.log 29 1762400628
+Received command: FILE_CONTENT test_source/dir1/subdir/file3.log
+Received file: sync_root/est_source/dir1/subdir/file3.log, size: 29 bytes.
+Received command: FILE_METADATA test_source/dir1/file2.txt 26 1762400628
+Received command: FILE_CONTENT test_source/dir1/file2.txt
+Received file: sync_root/est_source/dir1/file2.txt, size: 26 bytes.
+Received command: CREATE_DIR test_source/dir2
+Received command: FILE_METADATA test_source/file1.txt 23 1762400628
+Received command: FILE_CONTENT test_source/file1.txt
+Received file: sync_root/est_source/file1.txt, size: 23 bytes.
+Received command: FILE_METADATA test_source/large_file.bin 5242880 1762400628
+Received command: FILE_CONTENT test_source/large_file.bin
+Received file: sync_root/est_source/large_file.bin, size: 5242880 bytes.
+Received command: QUIT
+Client requested to quit.
